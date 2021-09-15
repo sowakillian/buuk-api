@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "concerts",
+  "info": {
+    "name": "Concert",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "artist": {
+      "model": "artist"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "city": {
+      "type": "string"
+    },
+    "place": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "music_style": {
+      "model": "music-style"
+    }
+  }
+}
